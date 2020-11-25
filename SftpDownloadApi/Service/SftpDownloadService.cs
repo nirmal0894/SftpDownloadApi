@@ -24,6 +24,8 @@ namespace SftpDownloadApi.Service
                     sftp.Disconnect();
                     //logger.LogDebug($"Download successful for file {downloadConfigs.fileName} using Sftp to local location {downloadConfigs.localFilePath}");
                 }
+                return string.Empty;
+                   
             }
             catch (Exception e)
             {
